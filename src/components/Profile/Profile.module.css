@@ -23,7 +23,11 @@
   margin-top: 20px;
 }
 
-.tag,
+.tag {
+  font-size: 16px;
+  color: gray;
+}
+
 .location {
   font-size: 16px;
   color: gray;
@@ -32,12 +36,6 @@
 .stats {
   display: flex;
   background-color: #f3f6f9;
-}
-
-.stats li {
-  width: 33.33%;
-  text-align: center;
-  padding: 15px 0;
 }
 
 .label {

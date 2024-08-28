@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Profile.module.css';
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -10,6 +10,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <p className={styles.tag}>@{tag}</p>
         <p className={styles.location}>{location}</p>
       </div>
+
       <ul className={styles.stats}>
         <li>
           <span className={styles.label}>Followers</span>
@@ -27,3 +28,5 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     </div>
   );
 };
+
+export default Profile;
