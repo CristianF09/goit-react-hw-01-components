@@ -1,5 +1,17 @@
 [
   {
+    "id": "1a2b3c",
+    "type": "invoice",
+    "amount": "125.00",
+    "currency": "USD"
+  },
+  {
+    "id": "2b3c4d",
+    "type": "payment",
+    "amount": "200.00",
+    "currency": "USD"
+  }
+  {
     "id": "1e0700a2-5183-4291-85cc-2065a036a683",
     "type": "invoice",
     "amount": "964.82",
