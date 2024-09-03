@@ -9,6 +9,12 @@ import data from './data/data.json';
 import friends from './data/friends.json';
 import transactions from './data/transactions.json';
 
+// Conversia id-urilor în string-uri pentru FriendList
+const convertedFriends = friends.map(friend => ({
+  ...friend,
+  id: friend.id.toString(),
+}));
+
 function App() {
   return (
     <div>
@@ -20,7 +26,7 @@ function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends} />
+      <FriendList friends={convertedFriends} />
       <TransactionHistory items={transactions} />
     </div>
   );
