@@ -2,4 +2,44 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.statusOnline {
+  background-color: #4caf50; /* Green for online */
+}
+
+.statusOffline {
+  background-color: #f44336; /* Red for offline */
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
 }
